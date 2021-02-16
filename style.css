@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Container /////////////////////////*/
+
+#container{
+  height: 45rem;
+  width: 45rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Title /////////////////////////*/
+
+#container h1{
+  font-size: 3.5rem;
+  color: #BAA193;
+}
+
+#container h1 span{
+  font-size: 8rem;
+  color: #72005F;
+}
+
+/*Buttom /////////////////////////*/
+
+#container .title-btn button{
+  width: 15rem;
+  height: 3.5rem;
+  background-color: #72005F;
+
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*Image-LandingPage /////////////////////////*/
+@keyframes levitating{
+  from {margin: 0 0 0 10rem;}
+  to {margin: 0 0 4rem 10rem;}
+}
+
+@keyframes shadow{
+  from {width: 10rem;}
+  
+  to {width: 7rem; 
+    margin-left: 1rem; 
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+}
+
+#landingGoat{
+  width: 25rem;
+  height: 35rem;
+  margin-left: 10rem;
+
+  animation-name: levitating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.shadow{
+  width: 10rem;
+  height: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.801);
+  border-radius:100%;
+  position: absolute;
+
+  top: 85%;
+  left: 58%;
+
+  animation-name: shadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
