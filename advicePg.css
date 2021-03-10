@@ -24,6 +24,12 @@
   border-radius: 1rem;
   border: none;
   outline: none;
+
+  cursor: pointer;
+}
+
+#title a{
+  text-decoration: none;
 }
 
 #title h1{
